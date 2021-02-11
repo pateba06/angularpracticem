@@ -1,0 +1,18 @@
+<p>kentucky works!</p>
+<img src="https://tse4.mm.bing.net/th?id=OIP.j8gxbNiSDLyDBtwawiJGcQHaD5&pid=Api&P=0&w=309&h=163" >
+
+<h2> Interpolation {{studentName}} and {{cityName}}</h2>
+
+<button (click)="changeCity()" >  change the name city</button>
+<button (click)="changeStudentName()" >  change the Student Name </button>
+
+<!-- *ngFor Directive-->
+<h1>student name</h1>
+<ul>
+    <li *ngFor="let arr of testArray"> {{arr}}</li>
+</ul>
+
+<h1>location</h1>
+<ul>
+    <li *ngFor="let item of testArray1"> {{item.name | uppercase}}<span> City Name is </span> {{item.city }}</li>
+</ul>
