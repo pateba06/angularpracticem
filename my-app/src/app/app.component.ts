@@ -7,14 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  isdisbaled =true;
-  clickEnable:boolean=true;
-  
-  enabledDisabled(){
-  
-  this.clickEnable=!this.clickEnable;
  
-  }
-  
-}
 
+}

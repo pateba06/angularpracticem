@@ -6,13 +6,17 @@ import { FloridaComponent } from './florida/florida.component';
 import { KentuckyComponent } from './kentucky/kentucky.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BadalComponent } from './badal/badal.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FloridaComponent,
     KentuckyComponent,
-    BadalComponent
+    BadalComponent,
+    NotfoundComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
