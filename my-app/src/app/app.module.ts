@@ -8,6 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BadalComponent } from './badal/badal.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {ServicetestService} from './servicetest.service';
+import { ApilearningComponent } from './apilearning/apilearning.component'
+import {HttpClientModule} from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -16,13 +20,18 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     KentuckyComponent,
     BadalComponent,
     NotfoundComponent,
-    DashboardComponent
+    DashboardComponent,
+    ApilearningComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+   
+
   ],
-  providers: [],
+  providers: [ServicetestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
